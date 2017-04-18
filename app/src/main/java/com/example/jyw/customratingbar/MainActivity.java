@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         ratingBar.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
             @Override
             public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {
-                int rate = (int) Math.ceil(rating);
+                int rate = (int) Math.floor(rating);
 //                int rate = (int) rating;
                 if (rate == 0) {
                     rate = 1;
